@@ -7,4 +7,15 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Flecs.NET.Debug" Version="4.0.0" Condition="'$(Configuration)' == 'Debug'" />
+    <PackageReference Include="Flecs.NET.Release" Version="4.0.0" Condition="'$(Configuration)' == 'Release'" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Playable.Audio\Playable.Audio.csproj" />
+    <ProjectReference Include="..\Playable.Logger\Playable.Logger.csproj" />
+    <ProjectReference Include="..\Playable.Renderer\Playable.Graphics.csproj" />
+  </ItemGroup>
+
 </Project>
