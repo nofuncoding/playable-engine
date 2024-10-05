@@ -18,4 +18,8 @@
     <ProjectReference Include="..\Playable.Renderer\Playable.Graphics.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Resource\" />
+  </ItemGroup>
+
 </Project>

@@ -1,4 +1,4 @@
-﻿using Playable.Logger;
+﻿global using Playable.Logger;
 
 namespace Playable;
 

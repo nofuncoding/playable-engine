@@ -1,0 +1,7 @@
+<Project>
+  <ItemGroup Condition="'$(LogProject)' == ''">
+    <ProjectReference Include="..\Playable.Logger\Playable.Logger.csproj" />
+    <Using Include="Playable.Logger" />
+    <Using Include="Microsoft.Extensions.Logging" />
+  </ItemGroup>
+</Project>

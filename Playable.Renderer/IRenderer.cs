@@ -1,11 +1,7 @@
-﻿// loggers
-global using Playable.Logger;
-global using Microsoft.Extensions.Logging;
-
-namespace Playable.Graphics;
+﻿namespace Playable.Graphics;
 
 public interface IRenderer
 {
-    void Initializate();
+    void Initializate(Action<double> onUpdate);
     void Start();
 }
